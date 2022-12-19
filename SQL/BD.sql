@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `clinicsystem` /*!40100 DEFAULT CHARACTER SET latin1 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `clinicsystem`;
 -- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
 --
 -- Host: database-1.ckzqkucrjrxv.us-east-1.rds.amazonaws.com    Database: clinicsystem
@@ -259,4 +261,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-16 10:49:38
+-- Dump completed on 2022-12-16 10:55:16
