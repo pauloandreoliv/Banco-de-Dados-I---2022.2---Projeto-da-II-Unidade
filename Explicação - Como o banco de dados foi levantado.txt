@@ -5,4 +5,4 @@ Além da configuração de métodos de acesso, permissões de acesso e outras da
 
 O banco foi alimentado, ou seja, os dados foram inseridos no banco de dados, por meio de códigos programados em Python, que estão disponíveis na pasta "Inserts" deste mesmo repositório.
 Para que houvesse uma maior variedade de dados no BD, foi utilizada uma biblioteca de randomização da escolha de dados de um conjunto finito de informações fornecidas por nós.
-O próprio código se encarregava de escolher ou gerar dados como observações, salário, número de telefone, CPF, e-mail, nome completo, endereço e outros.
+O próprio código se encarregava de escolher ou gerar dados como observações, salários, números de telefone, CPFs, e-mails, nomes completos, endereços e outros.
