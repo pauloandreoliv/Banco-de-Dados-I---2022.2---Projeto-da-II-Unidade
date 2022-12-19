@@ -35,16 +35,16 @@ for x in resultado:
         prescricao = random.choice(prescricoes)
 
 
-        sql = "SELECT prontuario_id, prontuario_paciente_id, medico_funcionario_id FROM Registro"
+        sql = "SELECT prontuario_paciente_id, medico_funcionario_id FROM Registro"
         mycursor.execute(sql)
         para_verificar = mycursor.fetchall()
 
         for k in para_verificar:
-          if k == (y, y, resultado3[0][0]):
+          if k == (y, resultado3[0][0]):
             break
           else:
-            sql = "INSERT IGNORE INTO Registro (prontuario_id, prontuario_paciente_id, medico_funcionario_id, observacao, prescricao) VALUES (%s, %s, %s, %s, %s)"
-            val = (y, y, resultado3[0][0], observacao, prescricao)
+            sql = "INSERT IGNORE INTO Registro (prontuario_paciente_id, medico_funcionario_id, observacao, prescricao) VALUES (%s, %s, %s, %s)"
+            val = (y, resultado3[0][0], observacao, prescricao)
 
             mycursor.execute(sql, val)
 
