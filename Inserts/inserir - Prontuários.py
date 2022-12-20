@@ -11,24 +11,15 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 
-sql = "SELECT paciente_id FROM Prontuario"
+sql = "SELECT id FROM Paciente"
 mycursor.execute(sql)
 resultado = mycursor.fetchall()
 
 for x in resultado:
   for y in x:    
-    sql = f"SELECT Consulta.medico_funcionario_id FROM Consulta, Agendamento, Paciente WHERE Consulta.id = Agendamento.consulta_id AND Paciente.id = {y}"
-    mycursor.execute(sql)
-    result = mycursor.fetchall()
-
-    print(result)
-    
-    '''for z in result:
-      for k in z:
-        
-    sql = "INSERT INTO Registro (prontuario_id, prontuario_pacinete_id, medico_funcionario_id, observacao, prescricao) VALUES (%s, %s, %s, %s, %s)"
-    val = (calcularId(), y)
+    sql = f"INSERT INTO Prontuario (paciente_id) VALUES (%s)"
+    val = (y)
     mycursor.execute(sql, val)
 
-    mydb.commit()'''
+    mydb.commit()
 
