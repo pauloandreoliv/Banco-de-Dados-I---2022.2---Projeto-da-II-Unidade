@@ -5,14 +5,14 @@
 
 ## INTRODUÇÃO
 
-Este projeto tem a finalidade de demonstrar o processo de criação de um banco de dados de um consultorio medico com base nos conhecimentos que foram adquiridos ao longo do curso de  banco de dados 1 IFPE PAULISTA 2° ADS
+Este projeto tem a finalidade de demonstrar o processo de criação de um banco de dados de um consultorio médico com base nos conhecimentos que foram adquiridos ao longo da disciplina de Banco de Dados I no semestre 2022.2 do IFPE PAULISTA, 2° período de Análise e Desenvolvimento de Sistemas.
 
 <hr size="100">
 
 ## METODOLOGIA 
 
 O banco de dados foi levantado remotamente através da criação de um serviço gratuito na plataforma digital da Amazon AWS (Amazon Web Services).
-A criação do banco de dados foi realizada no modelo RDx'S (Relation Database Service), em que houve a criação de um banco de dados MySQL.
+A criação do banco de dados foi realizada no modelo RDS (Relation Database Service), em que houve a criação de um banco de dados MySQL.
 
 Além da configuração de métodos de acesso, permissões de acesso e outras da plataforma Amazon, houve também a conexão para gerenciamento do banco de dados. Tal conexão de gerenciamento se deu por meio da utilização do MySQL WorkBench, em que as tabelas e colunas do BD foram criadas e configuradas.
 
