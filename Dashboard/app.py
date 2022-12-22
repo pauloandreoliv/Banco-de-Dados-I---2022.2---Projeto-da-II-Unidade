@@ -206,7 +206,7 @@ df_medicoxRecep = pd.DataFrame({
 
 })
 fig_piz = px.pie(df_medicoxRecep, values='Qtd', names='Função',
-             title='Total klp Médico X Recepcionista', color_discrete_sequence=["#022933", "#97d4d6"])
+             title='Total (Qtd) Médico X Recepcionista', color_discrete_sequence=["#022933", "#97d4d6"])
             #  hover_data=['lifeExp'], labels={'lifeExp':'life expectancy'})
 fig_piz.update_traces(textposition='inside', textinfo='percent+label')
 
@@ -220,7 +220,7 @@ df_qtdFuncionxSalario = pd.DataFrame({
     
 
 })
-fig_histo = px.histogram(df_qtdFuncionxSalario, x="Faixa Salarial", y="(Qtd) Fucinonários", nbins=8, color_discrete_sequence=["#022933"])
+fig_histo = px.histogram(df_qtdFuncionxSalario, title="(Qtd) Funcionários X Faixa Salarial", x="Faixa Salarial", y="(Qtd) Fucinonários", nbins=8, color_discrete_sequence=["#022933"])
 
 app.layout = html.Div( children=[
     html.H1(

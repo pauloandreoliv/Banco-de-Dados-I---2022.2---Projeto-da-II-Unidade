@@ -1,0 +1,32 @@
+
+
+
+
+
+#root{
+    --background--:#97d4d6;
+    --text--:#022933;
+    --text2--:#ff0000;
+
+}
+
+body{
+    padding: 0;
+}
+
+h1{
+    font-size: 5em;
+    filter: drop-shadow(2px 3px 0px #F25C23);
+    font-weight: bold;
+    color: var(--text2--);
+    
+    
+}
+
+.h2-t .h2{
+    color: #ff0000;
+    font-size: 2em;
+    /* display: flex; */
+    text-align: center; 
+    margin-bottom: 1.5em;
+}
